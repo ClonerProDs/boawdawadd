@@ -1,0 +1,1172 @@
+2024-10-05 16:24:46 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 16:24:59 - WARNING aiogram: Goodbye!
+2024-10-05 16:57:31 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 16:57:42 - WARNING aiogram: Goodbye!
+2024-10-05 16:57:54 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 16:58:02 - WARNING aiogram: Goodbye!
+2024-10-05 17:13:06 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 17:13:06 - WARNING aiogram: Goodbye!
+2024-10-05 17:13:42 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 17:14:12 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\админ\PycharmProjects\pythonProject\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("'NoneType' object is not subscriptable")>
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\pythonProject\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\админ\PycharmProjects\pythonProject\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\админ\PycharmProjects\pythonProject\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\админ\PycharmProjects\pythonProject\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\админ\PycharmProjects\pythonProject\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\админ\PycharmProjects\pythonProject\BFG\modules\TicTacToe.py", line 127, in start_game_kb
+    zero = await url_name(game.chips['zero'])
+  File "C:\Users\админ\PycharmProjects\pythonProject\BFG\commands\db.py", line 321, in url_name
+    name = cursor.execute('SELECT name FROM users WHERE user_id = ?', (user_id,)).fetchone()[0]
+TypeError: 'NoneType' object is not subscriptable
+2024-10-05 17:14:21 - WARNING aiogram: Goodbye!
+2024-10-05 20:15:49 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 20:15:50 - WARNING aiogram: Goodbye!
+2024-10-05 22:11:10 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 22:18:23 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-135' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=KeyError('help_clanse')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\help.py", line 28, in wrapper
+    await func(call)
+  File "D:\bot tg\bfg-1.2-beta\commands\help.py", line 210, in help_clans
+    text=CONFIG['help_clanse'].format(name), reply_markup=kb.help_back())
+         ~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'help_clanse'
+2024-10-05 22:21:37 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-203' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('no such column: ext')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\assets\antispam.py", line 23, in wrapper
+    await func(message)
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\promo.py", line 174, in activ_promo
+    res = await activ_promo_db(name, message.from_user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\db.py", line 63, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: ext
+2024-10-05 23:07:18 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:08:38 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('near "=": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 34, in buy_energi_db
+    energi = cursor.execute('SELECT energy FROM users user_id = ?', (user_id,)).fetchone()[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: near "=": syntax error
+2024-10-05 23:08:57 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-26' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('near "=": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 34, in buy_energi_db
+    energi = cursor.execute('SELECT energy FROM users user_id = ?', (user_id,)).fetchone()[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: near "=": syntax error
+2024-10-05 23:09:40 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-29' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('near "=": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 34, in buy_energi_db
+    energi = cursor.execute('SELECT energy FROM users user_id = ?', (user_id,)).fetchone()[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: near "=": syntax error
+2024-10-05 23:09:49 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-34' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('near "=": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 34, in buy_energi_db
+    energi = cursor.execute('SELECT energy FROM users user_id = ?', (user_id,)).fetchone()[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: near "=": syntax error
+2024-10-05 23:10:27 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:10:45 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('near "=": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 34, in buy_energi_db
+    energi = cursor.execute('SELECT energy FROM users user_id = ?', (user_id,)).fetchone()[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: near "=": syntax error
+2024-10-05 23:13:36 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:14:01 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('near "=": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 34, in buy_energi_db
+    energi = cursor.execute('SELECT energy FROM users user_id = ?', (user_id,)).fetchone()[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: near "=": syntax error
+2024-10-05 23:19:25 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:20:06 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('near "=": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 34, in buy_energi_db
+    energi = cursor.execute('SELECT energy FROM users user_id = ?', (user_id,)).fetchone()[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: near "=": syntax error
+2024-10-05 23:21:17 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:22:55 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'energy' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 36, in buy_energi_db
+    energi = int(Decimal(energy) + Decimal(summ))
+                         ^^^^^^
+NameError: name 'energy' is not defined
+2024-10-05 23:25:30 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:25:48 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'energy' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    energi = int(Decimal(energy) + Decimal(summ))
+                         ^^^^^^
+NameError: name 'energy' is not defined
+2024-10-05 23:26:47 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:27:01 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'energy' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    energi = int(Decimal(energy) + Decimal(summ))
+                         ^^^^^^
+NameError: name 'energy' is not defined
+2024-10-05 23:30:43 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:39:01 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:39:25 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'summ' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 243, in buy_energi
+    await message.answer(f'{url}, вы выпили флягу и получили на {summ}$ за {data[1]} B-Coins {rwin}')
+                                                                 ^^^^
+NameError: name 'summ' is not defined
+2024-10-05 23:39:31 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'summ' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 243, in buy_energi
+    await message.answer(f'{url}, вы выпили флягу и получили на {summ}$ за {data[1]} B-Coins {rwin}')
+                                                                 ^^^^
+NameError: name 'summ' is not defined
+2024-10-05 23:40:05 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:42:23 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:44:47 - WARNING aiogram: Updates were skipped successfully.
+2024-10-05 23:45:04 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'summ' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    summ2 = '{:,}'.format(summ).replace(',', '.')
+                          ^^^^
+NameError: name 'summ' is not defined
+2024-10-05 23:48:21 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'summ' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    summ2 = '{:,}'.format(summ).replace(',', '.')
+                          ^^^^
+NameError: name 'summ' is not defined
+2024-10-05 23:49:18 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 00:00:19 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:01:47 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:03:47 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:07:04 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:08:40 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:10:00 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:10:26 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'bbuy_energi_db' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await bbuy_energi_db(user_id, data[0], data[1])
+          ^^^^^^^^^^^^^^
+NameError: name 'bbuy_energi_db' is not defined
+2024-10-06 12:10:29 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'bbuy_energi_db' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await bbuy_energi_db(user_id, data[0], data[1])
+          ^^^^^^^^^^^^^^
+NameError: name 'bbuy_energi_db' is not defined
+2024-10-06 12:11:28 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:11:36 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'bbuy_energi_db' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 242, in buy_energi
+    await bbuy_energi_db(user_id, data[0], data[1])
+          ^^^^^^^^^^^^^^
+NameError: name 'bbuy_energi_db' is not defined
+2024-10-06 12:14:07 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:14:31 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=ProgrammingError('Incorrect number of bindings supplied. The current statement uses 2, and there are 1 supplied.')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[1], u)
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 34, in buy_energi_db
+    energi = cursor.execute('UPDATE users SET energy = energy + ? WHERE user_id = ?', (user_id,)).fetchone()[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 2, and there are 1 supplied.
+2024-10-06 12:16:02 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:17:20 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 12:21:15 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 15:09:52 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 15:12:43 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 15:19:03 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 15:19:46 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=IndexError('tuple index out of range')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[2], u)
+                                 ~~~~^^^
+IndexError: tuple index out of range
+2024-10-06 15:20:43 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 18:32:57 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 18:33:10 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=IndexError('tuple index out of range')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 241, in buy_energi
+    await buy_energi_db(user_id, data[2], u)
+                                 ~~~~^^^
+IndexError: tuple index out of range
+2024-10-06 18:33:10 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=IndexError('tuple index out of range')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 241, in buy_energi
+    await buy_energi_db(user_id, data[2], u)
+                                 ~~~~^^^
+IndexError: tuple index out of range
+2024-10-06 18:33:10 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=IndexError('tuple index out of range')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 241, in buy_energi
+    await buy_energi_db(user_id, data[2], u)
+                                 ~~~~^^^
+IndexError: tuple index out of range
+2024-10-06 18:33:11 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=IndexError('tuple index out of range')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 241, in buy_energi
+    await buy_energi_db(user_id, data[2], u)
+                                 ~~~~^^^
+IndexError: tuple index out of range
+2024-10-06 18:33:13 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=IndexError('tuple index out of range')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 241, in buy_energi
+    await buy_energi_db(user_id, data[2], u)
+                                 ~~~~^^^
+IndexError: tuple index out of range
+2024-10-06 18:37:37 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 18:51:47 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 18:56:56 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 19:06:31 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 19:06:43 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:13 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 19:08:23 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:24 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:24 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:24 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:25 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:28 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:30 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-35' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:30 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-38' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:31 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-41' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:08:32 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-44' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 'sqlite3' is not defined")>
+Traceback (most recent call last):
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 35, in buy_energi_db
+    cursor.execute('UPDATE users SET energy = energy + ? WHERE id = ?', (energy, user_id))
+sqlite3.OperationalError: no such column: id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\main.py", line 240, in buy_energi
+    await buy_energi_db(user_id, data[0], data[1])
+  File "D:\bot tg\bfg-1.2-beta\commands\basic\status\db.py", line 38, in buy_energi_db
+    except sqlite3.Error as e:
+           ^^^^^^^
+NameError: name 'sqlite3' is not defined
+2024-10-06 19:09:58 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 20:18:11 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 20:24:28 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 20:35:06 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 20:42:13 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 20:45:27 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-52' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('no such column: ecoins\U0001f4b0')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\assets\antispam.py", line 23, in wrapper
+    await func(message)
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\promo.py", line 174, in activ_promo
+    res = await activ_promo_db(name, message.from_user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\db.py", line 63, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: ecoins\U0001f4b0
+2024-10-06 20:45:39 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-56' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OperationalError('no such column: ecoins\U0001f4b0')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\assets\antispam.py", line 23, in wrapper
+    await func(message)
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\promo.py", line 174, in activ_promo
+    res = await activ_promo_db(name, message.from_user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\db.py", line 63, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: ecoins\U0001f4b0
+2024-10-06 20:47:40 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-93' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\assets\antispam.py", line 23, in wrapper
+    await func(message)
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\promo.py", line 174, in activ_promo
+    res = await activ_promo_db(name, message.from_user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\db.py", line 69, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2024-10-06 20:48:13 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-108' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\assets\antispam.py", line 23, in wrapper
+    await func(message)
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\promo.py", line 174, in activ_promo
+    res = await activ_promo_db(name, message.from_user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\admin\db.py", line 69, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2024-10-06 21:34:47 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 22:10:54 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 22:16:46 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 22:18:55 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 22:22:23 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 22:28:24 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 22:32:59 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 22:33:24 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 're' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\entertaining\earnings\garden\potions.py", line 62, in bay_potions
+    match = re.match(r"Создать зелье (\d+)", message.text)
+            ^^
+NameError: name 're' is not defined
+2024-10-06 22:33:26 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=NameError("name 're' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Максим\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\bot tg\bfg-1.2-beta\commands\entertaining\earnings\garden\potions.py", line 62, in bay_potions
+    match = re.match(r"Создать зелье (\d+)", message.text)
+            ^^
+NameError: name 're' is not defined
+2024-10-06 22:35:00 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 22:36:18 - WARNING aiogram: Updates were skipped successfully.
+2024-10-06 22:39:58 - WARNING aiogram: Updates were skipped successfully.
